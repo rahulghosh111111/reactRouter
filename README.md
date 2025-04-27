@@ -6,7 +6,6 @@ The project aims to provide a strong foundation for developers looking to unders
 Key Features:
 
 Multiple page routing (Home, About, Services, Contact, etc.)
-
 Nested routes for complex layouts
 
 Dynamic routes with URL parameters (e.g., user profiles, product pages)
