@@ -4,17 +4,29 @@ ReactRouter is a dynamic web application that demonstrates the implementation of
 The project aims to provide a strong foundation for developers looking to understand and implement routing patterns in React, making web apps faster, more interactive, and user-friendly.
 
 Key Features:
+
 Multiple page routing (Home, About, Services, Contact, etc.)
+
 Nested routes for complex layouts
+
 Dynamic routes with URL parameters (e.g., user profiles, product pages)
+
 Navigation menus with active link highlighting
+
 Error handling for invalid routes (404 Page Not Found)
+
 Redirects and protected/private routes
+
 Smooth page transitions and minimal re-renders
+
 Tech Stack:
+
 ReactJS
+
 React Router DOM
+
 Tailwind CSS (for UI styling)
+
 JavaScript (ES6+)
 
 Use Case:
