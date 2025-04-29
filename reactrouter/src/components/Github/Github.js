@@ -1,6 +1,9 @@
 import React, { use } from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { FaLinkedin, FaGithub, FaCode } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
+
 // import { useLoaderData } from 'react-router-dom'
 
 function Github() {
@@ -28,12 +31,12 @@ function Github() {
 
     return (
         <>
-            <div>
-                <div className='bg-black text-center text-4xl p-6 text-white ' >
+            <div className='h-screen bg-gradient-to-r from-gray-700 to-black'>
+                <div className=' text-center text-4xl p-6 text-white font-bold' >
                     <h1>RAHUL GHOSH</h1>
                 </div>
 
-                <div className='bg-black flex'>
+                <div className=' flex border-[1px] mx-8 my-4'>
                     <div className='  text-3xl p-8 text-white text-shadow-2xl'>
 
                         <img className='rounded-full' src={data.avatar_url} alt="Git image" width={450} />
@@ -46,38 +49,38 @@ function Github() {
                         <div>
                             <h2 className='text-white text-2xl pt-2'> Public Github Repositories : {data.public_repos}</h2>
                         </div>
-                        <div className='text-white text-2xl pt-2 space-x-4 '>
+                        <div className='text-white text-2xl pt-2 space-x-4 flex flex-wrap gap-4'>
                             <a
                                 href="https://www.linkedin.com/in/rahul-ghosh-b0b660254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                className="hover:underline hover:text-blue-700"
+                                className="flex items-center gap-2 hover:underline hover:text-blue-700"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                LinkedIn
+                                <FaLinkedin /> LinkedIn
                             </a>
                             <a
                                 href="https://github.com/rahulghosh111111"
-                                className="hover:underline hover:text-blue-700"
+                                className="flex items-center gap-2 hover:underline hover:text-blue-700"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Github
+                                <FaGithub /> Github
                             </a>
                             <a
                                 href="https://leetcode.com/u/Rahul_official/"
-                                className="hover:underline hover:text-blue-700"
+                                className="flex items-center gap-2 hover:underline hover:text-blue-700"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                LeetCode
+                                <SiLeetcode /> LeetCode
                             </a>
                             <a
                                 href="https://github.com/rahulghosh111111?tab=repositories"
-                                className="hover:underline hover:text-blue-700"
+                                className="flex items-center gap-2 hover:underline hover:text-blue-700"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Repositories
+                                <FaCode /> Repositories
                             </a>
                         </div>
                         <div className='text-white text-2xl pt-2 pb-2'>Bio : {data.bio}</div>
